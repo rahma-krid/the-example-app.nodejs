@@ -10,7 +10,7 @@ node {
        bat 'npm install'
     }
     stage('deploy') {
-        echo 'npm start'
+        bat 'npm start'
     }
     
      stage('test') {
