@@ -12,7 +12,7 @@ node {
     }
     
     stage('deploy') {
-        bat 'npm start'
+        echo 'npm start'
     }
     
    
