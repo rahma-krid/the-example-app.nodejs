@@ -12,7 +12,7 @@ node {
     }
   
     stage('test') {
-     echo 'npm test'
+     bat 'npm test'
     }
     
    
