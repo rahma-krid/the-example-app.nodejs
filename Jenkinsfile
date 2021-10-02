@@ -8,7 +8,7 @@ node {
     }
   
    stage('deploy') {
-        echo 'npm start'
+        bat 'npm run start:dev'
     }
   
     stage('test') {
