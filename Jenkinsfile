@@ -7,7 +7,7 @@ node {
         git url:' https://github.com/rahma-krid/the-example-app.nodejs.git'
     }
     stage('build') {  
-       sh 'npm install'
+       bat 'npm install'
     }
     stage('deploy') {
         echo 'npm start'
