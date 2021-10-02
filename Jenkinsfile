@@ -1,9 +1,10 @@
 node {
     
     stage('Cloning') { 
-        git url:' https://github.com/contentful/the-example-app.nodejs.git'
+        git url:' https://github.com/rahma-krid/the-example-app.nodejs.git'
     }
-    stage('build') {      
+    stage('build') {  
+         sleep 10
        sh 'npm install'
     }
     stage('deploy') {
