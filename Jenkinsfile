@@ -6,12 +6,14 @@ node {
     stage('build') {  
        bat 'npm install'
     }
+  
+    stage('test') {
+     bat 'npm test'
+    }
+    
     stage('deploy') {
         bat 'npm start'
     }
     
-     stage('test') {
-     echo 'testing app'
-    }
-    
+   
 }
