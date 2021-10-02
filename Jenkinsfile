@@ -7,13 +7,15 @@ node {
        bat 'npm install'
     }
   
-    stage('test') {
-     bat 'npm test'
-    }
-    
-    stage('deploy') {
+   stage('deploy') {
         echo 'npm start'
     }
+  
+    stage('test') {
+     echo 'npm test'
+    }
+    
+   
     
    
 }
