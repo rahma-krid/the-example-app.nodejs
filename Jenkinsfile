@@ -4,15 +4,18 @@ node {
         git url:' https://github.com/rahma-krid/the-example-app.nodejs.git'
     }
     stage('build') {  
+       //install dependencies 
        bat 'npm install'
     }
   
    stage('deploy') {
-        bat 'npm run start:dev'
+     //start the app 
+        bat 'npm run start:production'
     }
   
     stage('test') {
-     bat 'npm test'
+    
+      //bat 'npm test'
     }
     
    
