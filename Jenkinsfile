@@ -10,7 +10,7 @@ node {
   
    stage('deploy') {
      //start the app 
-        echo 'npm run start:production'
+        bat 'npm run start:env &' 
     }
   
     stage('test') {
